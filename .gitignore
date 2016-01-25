@@ -1,0 +1,8 @@
+/bin/
+target
+.project
+.classpath
+.settings
+global-groovy.log
+soapui-errors.log
+soapui.log
