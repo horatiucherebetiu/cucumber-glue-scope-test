@@ -15,7 +15,7 @@ public class OneStepDef2 {
 	private ServiceTest2 serviceTest2;
 
 	@Given("^the StepDef injection2 works$")
-	public void the_StepDef_injection_works() {
+	public void theStepDefInjection2Works() {
 		LOGGER.info("serviceTest1 = " + serviceTest2.getTest1());
 	}
 
