@@ -29,7 +29,7 @@ public class OneStepDef3 {
 	}
 
 	@Given("^the StepDef injection3 works$")
-	public void theStepDefInjection3Works() throws Throwable {
+	public void theStepDefInjection3Works() {
 		LOGGER.info("serviceTest1 = " + serviceTest.getTest1());
 	}
 

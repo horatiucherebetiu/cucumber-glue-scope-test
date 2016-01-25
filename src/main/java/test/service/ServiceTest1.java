@@ -3,6 +3,8 @@
  */
 package test.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
@@ -14,8 +16,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class ServiceTest1 {
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(ServiceTest1.class);
+
 	public ServiceTest1() {
-		System.out.println("Test1 constructor called");
+		LOGGER.info("Test1 constructor called");
 	}
 
 }
