@@ -1,7 +1,7 @@
 /**
  *
  */
-package test.context;
+package test.generic;
 
 import org.junit.runner.RunWith;
 
@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
  *
  */
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = { "json:target/tests-result-cucumber.json" }, glue = { "test.commonglue"})
+@CucumberOptions(plugin = { "json:target/tests-result-cucumber.json" }, glue = { "test.controller"})
 public class RunTests {
 
 }

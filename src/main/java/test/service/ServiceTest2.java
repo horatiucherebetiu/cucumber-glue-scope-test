@@ -1,13 +1,13 @@
-package test.beans;
+package test.service;
 
 import org.springframework.beans.factory.annotation.Lookup;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Test2 {
+public class ServiceTest2 {
 
 	@Lookup
-	public Test1 getTest1(){
+	public ServiceTest1 getTest1(){
 		return null;
 	}
 

@@ -1,4 +1,4 @@
-package test.commonglue;
+package test.controller;
 
 import java.io.IOException;
 
@@ -9,14 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
-import test.beans.Test2;
+import test.service.ServiceTest2;
 
 public class OneStepDef3 {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(OneStepDef3.class);
 
 	@Autowired
-	private Test2 test2;
+	private ServiceTest2 serviceTest;
 
 	@Before("@RequiresBrowser")
 	public void buildDriver() throws IOException {
@@ -30,7 +30,7 @@ public class OneStepDef3 {
 
 	@Given("^the StepDef injection3 works$")
 	public void the_StepDef_injection_works() throws Throwable {
-		LOGGER.info("test3 = " + test2);
+		LOGGER.info("serviceTest1 = " + serviceTest.getTest1());
 	}
 
 }

@@ -1,7 +1,7 @@
 /**
  *
  */
-package test.beans;
+package test.service;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
@@ -12,9 +12,9 @@ import org.springframework.stereotype.Service;
  */
 @Scope("cucumber-glue")
 @Service
-public class Test1 {
+public class ServiceTest1 {
 
-	public Test1() {
+	public ServiceTest1() {
 		System.out.println("Test1 constructor called");
 	}
 
