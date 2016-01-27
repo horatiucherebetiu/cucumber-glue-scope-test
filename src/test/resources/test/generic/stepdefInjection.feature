@@ -1,5 +1,5 @@
 Feature: StepDef injection
-
+# test commit
 
   Scenario: StepDef injection
     Given the StepDef injection works
