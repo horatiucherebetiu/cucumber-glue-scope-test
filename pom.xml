@@ -9,15 +9,9 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<maven-compiler.version>3.3</maven-compiler.version>
-		<driverVersion>2.49.0</driverVersion>
 		<org.slf4j.version>1.7.13</org.slf4j.version>
 		<cucumber.version>1.2.4</cucumber.version>
-		<soapui.version>5.1.2</soapui.version>
 		<spring.version>4.2.4.RELEASE</spring.version>
-		<httpclient.version>4.5.1</httpclient.version>
-		<commons-lang.version>2.6</commons-lang.version>
-		<jackson.vesion>2.5.0</jackson.vesion>
 		<junit.version>4.12</junit.version>
 		<gherkin.version>2.12.2</gherkin.version>
 	</properties>
@@ -51,54 +45,6 @@
             <artifactId>gherkin</artifactId>
             <version>${gherkin.version}</version>
         </dependency>
-	    
-	    <!-- Selenium -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>${driverVersion}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-support</artifactId>
-			<version>${driverVersion}</version>
-		</dependency>	
-
-		<!-- SOAP-UI plugin -->		
-		<dependency>
-			<groupId>com.smartbear.soapui</groupId>
-    		<artifactId>soapui-pro-maven-plugin</artifactId>                                                                             
-			<version>${soapui.version}</version>
-		</dependency>
-		<dependency>
-		    <groupId>xml-apis</groupId>
-		    <artifactId>xml-apis</artifactId>
-		    <version>1.4.01</version>
-		</dependency>
-		
-		<!-- Jackson JSON -->
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-  			<artifactId>jackson-databind</artifactId>		
-  			<version>${jackson.vesion}</version>
-		</dependency>
-
-		<!-- Apache commons libraries -->
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>${commons-lang.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpclient</artifactId>
-		    <version>${httpclient.version}</version>
-		</dependency>
-		<dependency>
-		    <groupId>org.apache.httpcomponents</groupId>
-		    <artifactId>httpclient-cache</artifactId>
-		    <version>${httpclient.version}</version>
-		</dependency>
 
 		<!-- Logging -->
 		<dependency>
@@ -128,11 +74,11 @@
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
         </dependency>
-        <dependency>
+       <!--  <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
             <version>${spring.version}</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
