@@ -1,5 +1,6 @@
 package test.controller;
 
+import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +15,11 @@ public class OneStepDef2 {
 	@Autowired
 	private ServiceTest2 serviceTest2;
 
-	@Given("^the StepDef injection2 works$")
-	public void theStepDefInjection2Works() {
+	@Given("^StepDef2 injection (.+)")
+	public void theStepDef2Injection(String status) {
 		LOGGER.info("serviceTest1 = " + serviceTest2.getTest1());
+		Assert.assertNotNull(status);
+		Assert.assertNotNull(serviceTest2.getTest1());
 	}
 
 }
